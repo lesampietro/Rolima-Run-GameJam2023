@@ -22,6 +22,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Particles",
+			"name": "Partículas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -110,7 +117,10 @@
 			"Teclado",
 			"PlanoDeFundoEmBlocos3",
 			"Texto",
-			"Áudio"
+			"Áudio",
+			"Partículas",
+			"PlanoDeFundoEmBlocos4",
+			"Texto2"
 		],
 		"subfolders": []
 	},
@@ -293,7 +303,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 180,
+	"viewportWidth": 280,
 	"viewportHeight": 320,
 	"firstLayout": null
 }

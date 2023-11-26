@@ -12,6 +12,16 @@
 			"sid": 362743536529772
 		},
 		{
+			"eventType": "variable",
+			"name": "pontuacao",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 958790166083311
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -27,11 +37,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 581441325469206,
+					"sid": 944745589336759,
 					"parameters": {
 						"object-to-create": "buraco",
 						"layer": "1",
-						"x": "choose(40,100,140)",
+						"x": "choose(90,140, 180, 200)",
 						"y": "500",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -56,11 +66,11 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 649270412204799,
+					"sid": 148813711941831,
 					"parameters": {
 						"object-to-create": "catioro",
 						"layer": "1",
-						"x": "random(35, 150)",
+						"x": "random(85, 220)",
 						"y": "500",
 						"create-hierarchy": true,
 						"template-name": "\"\""
@@ -83,6 +93,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 846735114989183,
+					"parameters": {
+						"variable": "pontuacao",
+						"value": "pontuacao - choose(1, 5, 10, 20)"
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "carrinho",
 					"sid": 618013543720436,
@@ -94,19 +113,28 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 851989903992687,
+					"sid": 584459739027763,
 					"parameters": {
 						"variable": "velo",
-						"value": "100"
+						"value": "velo / 2"
 					}
 				},
 				{
 					"id": "set-speed",
 					"objectClass": "PlanoDeFundoEmBlocos3",
-					"sid": 241255676364563,
+					"sid": 894035989798726,
 					"behaviorType": "Projétil",
 					"parameters": {
-						"speed": "100"
+						"speed": "velo"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos4",
+					"sid": 777966092460625,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "120"
 					}
 				},
 				{
@@ -129,10 +157,19 @@
 				{
 					"id": "set-speed",
 					"objectClass": "PlanoDeFundoEmBlocos3",
-					"sid": 390503643782346,
+					"sid": 993910361702426,
 					"behaviorType": "Projétil",
 					"parameters": {
-						"speed": "200"
+						"speed": "velo"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos4",
+					"sid": 938456828980060,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "180"
 					}
 				}
 			],
@@ -152,11 +189,88 @@
 			],
 			"actions": [
 				{
-					"id": "set-visible",
+					"id": "destroy",
 					"objectClass": "catioro",
-					"sid": 322149018496483,
+					"sid": 211786144160705
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 683755177691413,
 					"parameters": {
-						"visibility": "invisible"
+						"variable": "pontuacao",
+						"value": "choose(10, 20, 30)"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "carrinho",
+					"sid": 352412475800246,
+					"parameters": {
+						"animation": "\"Rodopio2AColisaoAgoraEhOutra\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 600836541345675,
+					"parameters": {
+						"variable": "velo",
+						"value": "velo / 2"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos3",
+					"sid": 501740128472776,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "velo"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos4",
+					"sid": 857750495045901,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "120"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 539752503264489,
+					"parameters": {
+						"seconds": "2.0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 292751031850710,
+					"parameters": {
+						"variable": "velo",
+						"value": "200"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos3",
+					"sid": 490290297887158,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "velo"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos4",
+					"sid": 379197463995208,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "180"
 					}
 				}
 			],
@@ -351,6 +465,39 @@
 				}
 			],
 			"sid": 527033038273495
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 292259092821903,
+					"parameters": {
+						"interval-seconds": "0.25"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 526433013968686,
+					"parameters": {
+						"variable": "pontuacao",
+						"value": "choose(2,5,10,15)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Texto",
+					"sid": 992727043865134,
+					"parameters": {
+						"text": "pontuacao|\"\""
+					}
+				}
+			],
+			"sid": 862563117140588
 		}
 	],
 	"sid": 352998372059395
