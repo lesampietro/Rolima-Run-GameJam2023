@@ -1,0 +1,82 @@
+{
+	"name": "catioro",
+	"plugin-id": "Sprite",
+	"sid": 217425981697602,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Piscar",
+			"sid": 718827563495101
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 313191321590051
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestruirForaDoLayout",
+			"sid": 434047235133857
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 275,
+						"height": 366,
+						"originX": 0.4640112464854733,
+						"originY": 0.5482381759939703,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7061629,
+						"collisionPoly": {
+							"points": [
+								0.9318650421743206,
+								0.19248162803843977,
+								0.9318650421743206,
+								0.25880912003014883,
+								0.9048734770384255,
+								0.43367250800829094,
+								0.7879100281162136,
+								0.7381759939702279,
+								0.643955014058107,
+								0.8376672319577917,
+								0.35604498594189327,
+								0.9341435839457319,
+								0.10412371134020615,
+								0.9341435839457319,
+								0.06813495782567947,
+								0.8859054079517619,
+								0.06813495782567947,
+								0.11409459204823819,
+								0.2840674789128397,
+								0.06585641605426794,
+								0.35604498594189327,
+								0.06585641605426794,
+								0.8598875351452671,
+								0.1442434520444696
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 443111228018785,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

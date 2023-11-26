@@ -1,0 +1,357 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "velo",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 362743536529772
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 523914394285251,
+					"parameters": {
+						"interval-seconds": "5.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 581441325469206,
+					"parameters": {
+						"object-to-create": "buraco",
+						"layer": "1",
+						"x": "choose(40,100,140)",
+						"y": "500",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 562994826890305
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 818685960321139,
+					"parameters": {
+						"interval-seconds": "choose(1,2,3)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 649270412204799,
+					"parameters": {
+						"object-to-create": "catioro",
+						"layer": "1",
+						"x": "random(35, 150)",
+						"y": "500",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 601675451842507
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "carrinho",
+					"sid": 481982363673569,
+					"parameters": {
+						"object": "buraco"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "carrinho",
+					"sid": 618013543720436,
+					"parameters": {
+						"animation": "\"Rodopio1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 851989903992687,
+					"parameters": {
+						"variable": "velo",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos3",
+					"sid": 241255676364563,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "100"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 175048233523455,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 119289271396398,
+					"parameters": {
+						"variable": "velo",
+						"value": "200"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos3",
+					"sid": 390503643782346,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "200"
+					}
+				}
+			],
+			"sid": 725488309290369
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "carrinho",
+					"sid": 956680863167761,
+					"parameters": {
+						"object": "catioro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "catioro",
+					"sid": 322149018496483,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 569187568331484
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 590696808509753
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 585153055592456,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "carrinho",
+					"sid": 253084082989053,
+					"parameters": {
+						"animation": "\"Right\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 823169664766516
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 348062674906468,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "carrinho",
+					"sid": 537207767729400,
+					"parameters": {
+						"animation": "\"Left\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 875806180629725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Teclado",
+					"sid": 241358439920049
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "carrinho",
+					"sid": 578797696244820,
+					"parameters": {
+						"animation": "\"Front\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 588698347929044
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "FonteDeSprites",
+					"sid": 619039132297812
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 397856034146562,
+					"parameters": {
+						"variable": "velo",
+						"value": "250"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos3",
+					"sid": 177899478438161,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "velo"
+					}
+				}
+			],
+			"sid": 428743069843754
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 209593995502856
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "catioro",
+					"sid": 799889007941065,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "velo"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "buraco",
+					"sid": 484532787798467,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "velo"
+					}
+				}
+			],
+			"sid": 525156096648254
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "carrinho",
+					"sid": 847491520518934,
+					"parameters": {
+						"animation": "\"Rodopio1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "carrinho",
+					"sid": 897670888868340,
+					"parameters": {
+						"animation": "\"Front\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 787853167671471
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 178113363400895
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 231149574222032,
+					"parameters": {
+						"audio-file": "loop2",
+						"loop": "looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 527033038273495
+		}
+	],
+	"sid": 352998372059395
+}
