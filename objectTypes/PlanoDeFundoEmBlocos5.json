@@ -1,31 +1,36 @@
 {
-	"name": "FonteDeSprites",
-	"plugin-id": "Spritefont2",
-	"sid": 726119932309307,
+	"name": "PlanoDeFundoEmBlocos5",
+	"plugin-id": "TiledBg",
+	"sid": 994016638058481,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Bullet",
 			"name": "Projétil",
-			"sid": 587510255866043
+			"sid": 112558316631416
 		},
 		{
-			"behaviorId": "destroy",
-			"name": "DestruirForaDoLayout",
-			"sid": 250310038290607
+			"behaviorId": "wrap",
+			"name": "DarAVolta",
+			"sid": 587898024351833
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 178770187194626
 		}
 	],
 	"effectTypes": [],
 	"image": {
-		"width": 128,
-		"height": 256,
+		"width": 600,
+		"height": 600,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 8854993,
+		"imageSpriteId": 559431,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

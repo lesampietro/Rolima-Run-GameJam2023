@@ -83,6 +83,35 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 279159688349997,
+					"parameters": {
+						"interval-seconds": "choose(5,10,15)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 240934919677999,
+					"parameters": {
+						"object-to-create": "Sprite",
+						"layer": "1",
+						"x": "random(85, 220)",
+						"y": "500",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 854097131654802
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "carrinho",
 					"sid": 481982363673569,
@@ -99,6 +128,18 @@
 					"parameters": {
 						"variable": "pontuacao",
 						"value": "pontuacao - choose(1, 5, 10, 20)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 395346556411205,
+					"parameters": {
+						"audio-file": "buraco",
+						"loop": "not-looping",
+						"volume": "-8",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				},
 				{
@@ -130,8 +171,17 @@
 				},
 				{
 					"id": "set-speed",
-					"objectClass": "PlanoDeFundoEmBlocos4",
-					"sid": 777966092460625,
+					"objectClass": "PlanoDeFundoEmBlocos7",
+					"sid": 326422424638049,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "120"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos5",
+					"sid": 308104721409612,
 					"behaviorType": "Projétil",
 					"parameters": {
 						"speed": "120"
@@ -165,8 +215,17 @@
 				},
 				{
 					"id": "set-speed",
-					"objectClass": "PlanoDeFundoEmBlocos4",
-					"sid": 938456828980060,
+					"objectClass": "PlanoDeFundoEmBlocos7",
+					"sid": 743815050849210,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos5",
+					"sid": 988840882165922,
 					"behaviorType": "Projétil",
 					"parameters": {
 						"speed": "180"
@@ -194,6 +253,18 @@
 					"sid": 211786144160705
 				},
 				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 734923029766072,
+					"parameters": {
+						"audio-file": "dog hit",
+						"loop": "not-looping",
+						"volume": "-8",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
 					"sid": 683755177691413,
@@ -205,9 +276,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "carrinho",
-					"sid": 352412475800246,
+					"sid": 765576993122180,
 					"parameters": {
-						"animation": "\"Rodopio2AColisaoAgoraEhOutra\"",
+						"animation": "\"Rodopio3\"",
 						"from": "beginning"
 					}
 				},
@@ -231,8 +302,17 @@
 				},
 				{
 					"id": "set-speed",
-					"objectClass": "PlanoDeFundoEmBlocos4",
-					"sid": 857750495045901,
+					"objectClass": "PlanoDeFundoEmBlocos7",
+					"sid": 801488304056079,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "120"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos5",
+					"sid": 715992966163223,
 					"behaviorType": "Projétil",
 					"parameters": {
 						"speed": "120"
@@ -266,8 +346,17 @@
 				},
 				{
 					"id": "set-speed",
-					"objectClass": "PlanoDeFundoEmBlocos4",
-					"sid": 379197463995208,
+					"objectClass": "PlanoDeFundoEmBlocos7",
+					"sid": 255532115079353,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "PlanoDeFundoEmBlocos5",
+					"sid": 454856968530011,
 					"behaviorType": "Projétil",
 					"parameters": {
 						"speed": "180"
@@ -412,6 +501,15 @@
 					"parameters": {
 						"speed": "velo"
 					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Sprite",
+					"sid": 751659665606741,
+					"behaviorType": "Projétil",
+					"parameters": {
+						"speed": "velo"
+					}
 				}
 			],
 			"sid": 525156096648254
@@ -498,6 +596,48 @@
 				}
 			],
 			"sid": 862563117140588
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "carrinho",
+					"sid": 737818348778680,
+					"parameters": {
+						"object": "Sprite"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite",
+					"sid": 537758557187375
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 762063728720630,
+					"parameters": {
+						"audio-file": "pipa",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 494509661827975,
+					"parameters": {
+						"variable": "pontuacao",
+						"value": "50"
+					}
+				}
+			],
+			"sid": 917135576254430
 		}
 	],
 	"sid": 352998372059395

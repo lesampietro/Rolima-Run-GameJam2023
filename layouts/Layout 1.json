@@ -119,68 +119,6 @@
 					}
 				},
 				{
-					"type": "PlanoDeFundoEmBlocos4",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 0.38,
-						"image-scale-y": 0.38,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {
-						"Sólido": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Projétil": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						},
-						"DarAVolta": {
-							"properties": {
-								"wrap-to": "layout"
-							}
-						}
-					},
-					"world": {
-						"x": -98.149259437492,
-						"y": 1471.5353037253258,
-						"width": 780.9601841783591,
-						"height": 156.73656630641344,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Texto2",
 					"properties": {
 						"text": "Texto",
@@ -221,6 +159,298 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlanoDeFundoEmBlocos5",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 0.42,
+						"image-scale-y": 0.42,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 16,
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"DarAVolta": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						},
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -91.33917880176004,
+						"y": 254.40768409980905,
+						"width": 254.47831213257012,
+						"height": 154.10847980247712,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlanoDeFundoEmBlocos7",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 0.42,
+						"image-scale-y": 0.42,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"DarAVolta": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						},
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -91.7937010418953,
+						"y": 499.9400826245025,
+						"width": 250.20653187972235,
+						"height": 154.72080358527373,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlanoDeFundoEmBlocos5",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 0.42,
+						"image-scale-y": 0.42,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 3,
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"DarAVolta": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						},
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -91.16109626159263,
+						"y": 754.2979695351554,
+						"width": 254.47831213257012,
+						"height": 154.10847980247712,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlanoDeFundoEmBlocos7",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 0.42,
+						"image-scale-y": 0.42,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 180,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"DarAVolta": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						},
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -91.6156185017279,
+						"y": 999.8303680598488,
+						"width": 254.71088425602275,
+						"height": 154.72080358527373,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"instanceVariables": {},
+					"behaviors": {
+						"Projétil": {
+							"properties": {
+								"speed": 200,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						},
+						"DestruirForaDoLayout": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 185.2058352425187,
+						"y": 552.197923365766,
+						"width": 30.876358630092188,
+						"height": 41.16847817345626,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				}
@@ -329,8 +559,8 @@
 						}
 					},
 					"world": {
-						"x": 309.5721505149242,
-						"y": -4.111476685770697,
+						"x": -268.29862900963343,
+						"y": 162.29543833491135,
 						"width": 23,
 						"height": 500,
 						"originX": 0,
@@ -391,68 +621,6 @@
 						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "PlanoDeFundoEmBlocos4",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 0.38,
-						"image-scale-y": 0.38,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 13,
-					"instanceVariables": {},
-					"behaviors": {
-						"Sólido": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						},
-						"Projétil": {
-							"properties": {
-								"speed": 180,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						},
-						"DarAVolta": {
-							"properties": {
-								"wrap-to": "layout"
-							}
-						}
-					},
-					"world": {
-						"x": -98.04123279756843,
-						"y": 782.4560429279818,
-						"width": 780.9601841783591,
-						"height": 156.73656630641344,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 840792629207250,
@@ -491,7 +659,7 @@
 				{
 					"type": "FonteDeSprites",
 					"properties": {
-						"text": "START!",
+						"text": "VALENDO!",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -516,7 +684,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
-								"set-angle": true,
+								"set-angle": false,
 								"step": true,
 								"enabled": true
 							}
@@ -526,9 +694,9 @@
 						}
 					},
 					"world": {
-						"x": 61.4675372711076,
-						"y": 117.61370046125289,
-						"width": 99.15935809728217,
+						"x": 65.60701276913446,
+						"y": 222.75637811113654,
+						"width": 154.6283297708428,
 						"height": 30,
 						"originX": 0,
 						"originY": 0,
@@ -558,7 +726,7 @@
 							1,
 							1
 						],
-						"horizontal-alignment": "left",
+						"horizontal-alignment": "right",
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"icon-set": -1,
@@ -570,8 +738,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -94.29309357740333,
-						"y": 22.87805894878879,
+						"x": 165.5270780262186,
+						"y": 16.909217168705595,
 						"width": 72.50415466077098,
 						"height": 30,
 						"originX": 0,
@@ -638,8 +806,8 @@
 					"properties": {
 						"text": "Pontos:",
 						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
+						"font": "Lucida Console",
+						"size": 10,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -661,10 +829,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -95.83780280859838,
-						"y": 3.5088565909453706,
-						"width": 65.8809938639279,
-						"height": 30,
+						"x": 183.6444358352976,
+						"y": 3.508856590945385,
+						"width": 56.04996034379084,
+						"height": 18.764533119843378,
 						"originX": 0,
 						"originY": 0,
 						"color": [

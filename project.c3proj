@@ -120,7 +120,11 @@
 			"Áudio",
 			"Partículas",
 			"PlanoDeFundoEmBlocos4",
-			"Texto2"
+			"Texto2",
+			"PlanoDeFundoEmBlocos5",
+			"PlanoDeFundoEmBlocos6",
+			"PlanoDeFundoEmBlocos7",
+			"Sprite"
 		],
 		"subfolders": []
 	},
@@ -153,6 +157,30 @@
 					"name": "loop2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 922009064158076,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "buraco.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 166049074890864,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "dog hit.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 773453677414823,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pipa.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 984906804438435,
 					"file-info": {
 						"purpose": "none"
 					}
